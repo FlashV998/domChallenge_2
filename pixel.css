@@ -1,0 +1,29 @@
+.box{
+    height: 4rem;
+    width: 4rem;
+    text-align:center ;
+    border: 2px solid #E9D5DA;
+    /* padding: 0; */
+    color: white;
+    font-weight: 900;
+    font-size: 2.5rem;
+    border-radius: 50%;
+}
+
+.parent{
+    /* box-sizing: border-box; */
+    border: 4px solid #E9D5DA;
+    margin: auto;
+    color: white;
+     padding: 0;
+    /* border: 0; */
+    width: 44rem;
+    height: 50rem;
+    display: flex;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+justify-content: center;
+    margin-bottom: 5rem;
+}
+
