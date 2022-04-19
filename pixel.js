@@ -56,7 +56,6 @@ function PixelArt(el, rows, cols) {
 
 
     function dragColor(e) {
-
         if (!e.target.classList.contains("color-pallete") && e.target.classList.contains("box")) {
             e.target.style.background = currentColor
         }
@@ -73,9 +72,10 @@ function PixelArt(el, rows, cols) {
         if (e.target.classList.contains("color-pallete")) {
             // currentElement.innerHTML="" 
 
-            if (currentElement != null) {
-                currentElement.innerHTML = ""
-            }
+            // if (currentElement != null) {
+                
+            // }
+            currentElement.innerHTML = ""
             currentElement = e.target
             currentElement.innerHTML = "🤩"
             console.log("sdafg");
@@ -83,7 +83,7 @@ function PixelArt(el, rows, cols) {
         }
         else {
             // console.log(e.style.backgroundColor);
-            currentElement = false
+            // currentElement = false
             e.target.style.background = currentColor
         }
     }
