@@ -1,20 +1,34 @@
 PixelArt(".parent", 10, 10)
 // fillColorPallete()
 
+// window.onbeforeunload=function(){
+//     const targetElement=document.querySelector(".secondChallenge")
+//     targetElement.scrollIntoView()
+// }
+
+window.onload=function(){
+    // window.scrollTo(-200,100)
+    const targetElement=document.querySelector(".secondChallenge")
+    targetElement.scrollIntoView()
+}
+
 var currentColor = "#FFFFFF"
 var currentElement = null
 
 document.getElementById("reset").onclick = () => {
-     currentColor = "#FFFFFF"
-     currentElement = null
-   const list= document.querySelectorAll(".box")
-//    list.forEach(item=>item.style.background="#FFFFFF")
-list.forEach(item => {
-    item.style.background="#FFFFFF"
-});
+    currentColor = "#FFFFFF"
+    currentElement = null
+    const list1 = document.querySelectorAll('.box:not(.color-pallete)')
+    const list2 = document.querySelectorAll('.color-pallete')
 
-   list[0].style.background="#E9D5DA"
-console.log(list[0]);
+    console.log(list1);
+
+    list1.forEach(item => {
+        item.style.background = "#FFFFFF"
+    });
+    list2.forEach(item => {
+        item.innerHTML = ""
+    });
 }
 
 function PixelArt(el, rows, cols) {
@@ -67,15 +81,15 @@ function PixelArt(el, rows, cols) {
         let i = position.split(',')
         let j = i[0] * i[1]
 
-        console.log(color + "Ssa" + position + "pos" + i[0] + "sds" + i[1]);
+        // console.log(color + "Ssa" + position + "pos" + i[0] + "sds" + i[1]);
 
         if (e.target.classList.contains("color-pallete")) {
             // currentElement.innerHTML="" 
 
-            // if (currentElement != null) {
-                
-            // }
-            currentElement.innerHTML = ""
+            if (currentElement != null) {
+                currentElement.innerHTML = null
+            }
+
             currentElement = e.target
             currentElement.innerHTML = "🤩"
             console.log("sdafg");

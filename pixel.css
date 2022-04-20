@@ -1,6 +1,7 @@
 .box{
     height: 4rem;
     width: 4rem;
+    margin:2px;
     text-align:center ;
     border: 2px solid #E9D5DA;
     /* padding: 0; */
@@ -8,6 +9,7 @@
     font-weight: 900;
     font-size: 2.5rem;
     border-radius: 50%;
+    background-color: #EEEEEE;
 }
 
 .parent{
@@ -25,5 +27,21 @@
     align-items: center;
 justify-content: center;
     margin-bottom: 5rem;
+}
+
+button{
+width:20rem !important;
+height:5rem;
+}
+
+.secondChallenge{
+    /* margin-top: 5rem; */
+    width:100%;
+    
+}
+
+h4{
+    font-size:larger;
+    font-weight: bold;
 }
 
